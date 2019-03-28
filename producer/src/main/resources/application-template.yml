@@ -1,0 +1,16 @@
+kafka:
+  bootstrap-address: localhost:9092
+  bootstrap-topic: current-value
+  topics:
+    - current-value
+    - tally
+    - sum
+    - average
+logging:
+  level:
+    bytewood.kafka: DEBUG
+
+schedule:
+  numbers:
+      cron: 0/1 * * * * ?
+
